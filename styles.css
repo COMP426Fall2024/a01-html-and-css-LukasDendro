@@ -1,0 +1,134 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #004d99;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+h1, h2 {
+    color: #004d99;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+    margin: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border: 5px solid #ccc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #004d99;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Specific Styles */
+ul {
+    list-style-type: circle;
+}
+
+select {
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.labor-image {
+    width: 150px; 
+    height: auto;
+    border: 2px solid #004d99;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Style for the legacy dropdown */
+#legacy-select {
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #004d99;
+    border-radius: 4px;
+}
+
+/* Style for the legacy content sections */
+.legacy-category {
+    margin-bottom: 20px;
+}
+
+/* Optional: Add some spacing to list items */
+.legacy-category ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Style for links in the dropdown sections */
+.legacy-category a {
+    color: #004d99;
+    text-decoration: none;
+}
+
+.legacy-category a:hover {
+    text-decoration: underline;
+}
+
+#special-quote {
+    font-style: italic;
+    font-family: 'Times New Roman', serif;
+}
+
+.hero-banner {
+    background-color: #e6f7ff;
+    border: 1px solid #004d99;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Class & ID based selectors */
+.special-border {
+    border: 2px solid #004d99;
+}
+
+#main-content {
+    padding: 20px;
+}

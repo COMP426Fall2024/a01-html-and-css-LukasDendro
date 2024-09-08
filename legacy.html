@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hercules' Legacy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hercules' Legacy</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="labors.html">The Twelve Labors</a>
+            <a href="legacy.html">Legacy</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Explore Hercules' Legacy</h2>
+        
+        <label for="legacy-select">Choose a category to view:</label>
+        <select id="legacy-select">
+            <option value="movies">Movies</option>
+            <option value="tv">Television</option>
+            <option value="literature">Literature</option>
+            <option value="art">Art</option>
+        </select>
+
+        <div id="legacy-content">
+            <div id="movies" class="legacy-category">
+                <h3>Movies</h3>
+                <ul>
+                    <li><strong><a href="https://www.imdb.com/title/tt0119282/" target="_blank">Hercules (1997)</a></strong> - Disney’s animated film depicting a stylized version of Hercules' story.</li>
+                    <li><strong><a href="https://www.imdb.com/title/tt1327773/" target="_blank">Hercules (2014)</a></strong> - A more action-oriented film starring Dwayne Johnson.</li>
+                    <li><strong><a href="https://www.imdb.com/title/tt0258776/" target="_blank">The Legend of Hercules (2014)</a></strong> - Another film adaptation featuring Kellan Lutz as Hercules.</li>
+                </ul>
+            </div>
+
+            <div id="tv" class="legacy-category" style="display: none;">
+                <h3>Television</h3>
+                <ul>
+                    <li><strong><a href="https://www.imdb.com/title/tt0111999/" target="_blank">Hercules: The Legendary Journeys (1995-1999)</a></strong> - A television series starring Kevin Sorbo as Hercules.</li>
+                    <li><strong><a href="https://www.imdb.com/title/tt0258776/" target="_blank">Xena: Warrior Princess (1995-2001)</a></strong> - A show that features Hercules in several episodes, enhancing the mythological universe.</li>
+                </ul>
+            </div>
+
+            <div id="literature" class="legacy-category" style="display: none;">
+                <h3>Literature</h3>
+                <ul>
+                    <li><strong><a href="https://www.goodreads.com/book/show/961374.The_Labors_of_Hercules" target="_blank">The Labors of Hercules by Agatha Christie</a></strong> - A collection of short stories featuring Hercule Poirot, who is named after the mythological hero.</li>
+                    <li><strong><a href="https://www.goodreads.com/book/show/108418.The_Complete_Hercules" target="_blank">The Complete Hercules by Robert Graves</a></strong> - A modern retelling of Hercules' myths and legends.</li>
+                </ul>
+            </div>
+
+            <div id="art" class="legacy-category" style="display: none;">
+                <h3>Art</h3>
+                <ul>
+                    <li><strong><a href="https://www.wikiart.org/en/jean-leon-gerome/hercules-and-the-lernaean-hydra" target="_blank">Hercules and the Lernaean Hydra by Jean-Leon Gerome</a></strong> - A painting depicting one of Hercules' labors.</li>
+                    <li><strong><a href="https://www.wikiart.org/en/antonio-del-pollaiolo/hercules-and-the-eretrian-boar" target="_blank">Hercules and the Erymanthian Boar by Antonio del Pollaiolo</a></strong> - A famous Renaissance artwork representing another of Hercules' feats.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hercules Mythology Site</p>
+    </footer>
+
+    <script>
+        document.getElementById('legacy-select').addEventListener('change', function() {
+            var selectedValue = this.value;
+            var categories = document.querySelectorAll('.legacy-category');
+            categories.forEach(function(category) {
+                if (category.id === selectedValue) {
+                    category.style.display = 'block';
+                } else {
+                    category.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
