@@ -12,8 +12,9 @@ header {
     padding: 1em 0;
 }
 
-h1, h2 {
-    color: #004d99;
+h1, h2, h3 {
+    font-family: fantasy;
+    color: white;
 }
 
 nav a {
