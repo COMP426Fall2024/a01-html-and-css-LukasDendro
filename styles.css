@@ -12,9 +12,14 @@ header {
     padding: 1em 0;
 }
 
-h1, h2, h3 {
+h1 {
     font-family: fantasy;
     color: white;
+}
+
+h2, h3 {
+    font-family: fantasy;
+    color: #004d99;
 }
 
 nav a {
@@ -28,7 +33,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Section Styling */
 section {
     margin: 20px;
 }
@@ -83,7 +87,6 @@ select {
     vertical-align: middle;
 }
 
-/* Style for the legacy dropdown */
 #legacy-select {
     font-size: 16px;
     padding: 5px;
@@ -92,18 +95,15 @@ select {
     border-radius: 4px;
 }
 
-/* Style for the legacy content sections */
 .legacy-category {
     margin-bottom: 20px;
 }
 
-/* Optional: Add some spacing to list items */
 .legacy-category ul {
     list-style-type: disc;
     padding-left: 20px;
 }
 
-/* Style for links in the dropdown sections */
 .legacy-category a {
     color: #004d99;
     text-decoration: none;
@@ -125,7 +125,6 @@ select {
     margin-bottom: 20px;
 }
 
-/* Class & ID based selectors */
 .special-border {
     border: 2px solid #004d99;
 }
